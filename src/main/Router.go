@@ -18,6 +18,7 @@ type Routes []Route
 
 var routes = Routes{
 	Route{"Ping", "GET", "/ping", PingHandler},
+    Route{"IdHandler", "GET", "/id/{id}", IdHandler},
 }
 
 func NewRouter() *mux.Router {
